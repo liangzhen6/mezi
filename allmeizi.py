@@ -21,7 +21,7 @@ def start(url):
 	for index,a in enumerate(all_a):
 		title = a.get_text()
 		url = a['href']
-		spider_queue = spider_allqueue[index%4]
+		spider_queue = spider_allqueue[index%num_cpus]
 		print(spider_queue)
 		spider_queue.push(url, title)
 
