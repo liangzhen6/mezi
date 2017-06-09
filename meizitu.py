@@ -38,7 +38,7 @@ def mztu_crawler(name):
 					print('sbbbb222', srting, img_url)
 					img_urls.append(img_url)
 					save_img(img_url)
-					time.sleep(0.5)
+					# time.sleep(0.5)
 				crawl_queue.complete(url)
 				##img_queue.push_imgurl(title, img_urls)
                 ##print('插入数据库成功')
